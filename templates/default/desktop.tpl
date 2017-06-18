@@ -1,0 +1,1 @@
+<a id="plugins_ffessmid_desk_espace" href="http://ffessm.fr/espacelicencie/identification.asp?idpseudo={$member->login}" title="Connexion à la page perso du site de la FFESSM.">Mon espace FFESSM<!-- {_T string="Mon espace FFESSM"} --></a>
