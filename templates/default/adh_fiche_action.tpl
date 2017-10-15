@@ -6,7 +6,6 @@
    	     LicenceNb.split("-")[2],
    	     '_blank');
    }
-   function FFESSM_Insc (LicenceNb) {
    function getFFESSM_Rech (NomAdh, PrenomAdh) {
    	  window.open("https://licences.ffessm.fr/licence_liste.asp?date1=&date2=&membre=&numeroadherent=&nomadherent=" + NomAdh +
    	     "&prenomadherent=" + PrenomAdh + "&datenais=&datevalidite=&assurance=&action=Ok",
@@ -23,6 +22,7 @@
    	     "&action2=VALIDER",
    	     '_blank');
    	  }
+   }
    function FFESSM_MonEsp (LicenceFFESSM) {
    	  window.open("http://ffessm.fr/espacelicencie/identification.asp?idpseudo={LicenceFFESSM}",
    	     '_blank');
