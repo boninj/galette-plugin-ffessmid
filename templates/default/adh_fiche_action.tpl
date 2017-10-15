@@ -7,6 +7,11 @@
    	     '_blank');
    }
    function FFESSM_Insc (LicenceNb) {
+   function getFFESSM_Rech (NomAdh, PrenomAdh) {
+   	  window.open("https://licences.ffessm.fr/licence_liste.asp?date1=&date2=&membre=&numeroadherent=&nomadherent=" + NomAdh +
+   	     "&prenomadherent=" + PrenomAdh + "&datenais=&datevalidite=&assurance=&action=Ok",
+   	     '_blank');
+   }
    	  window.open("https://licences.ffessm.fr/2018licence_creation2_information.asp?licence_numero=" +
    	     LicenceNb.split("-")[2],
    	     '_blank');
@@ -15,6 +20,9 @@
 </script>
 <li>
    <a class="button ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" href="javascript:getFFESSMId('{$member->login}')" id="btn_plugins_ffessmid_licence" title="Lancer une recherche de cette licence sur le site de la FFESSM." role="button" aria-disabled="false">Fiche FFESSM<!-- {_T string="Fiche FFESSM"} --></a>
+</li>
+<li>
+   <a class="button ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" href="javascript:getFFESSM_Rech('{$member->_name}','{$member->_surname}')" id="btn_plugins_ffessmid_licence" title="Lancer une recherche de cet adhérent(e) sur le site de la FFESSM." role="button" aria-disabled="false">Recherche FFESSM<!-- {_T string="Fiche FFESSM"} --></a>
 </li>
    {if $login->login == $member->login}
 <li>
