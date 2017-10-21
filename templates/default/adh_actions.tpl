@@ -1,4 +1,4 @@
-{if $login->isAdmin()}
+{if $login->isAdmin() or $login->isStaff() or $login->isGroupManager()}
 <script language="JavaScript" type="text/javascript">
 {literal}
    function getFFESSMId (LicenceNb) {
