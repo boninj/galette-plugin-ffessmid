@@ -1,15 +1,18 @@
 <script language="JavaScript" type="text/javascript">
 {literal}
+   // Recherche par numéro de licence
    function getFFESSMId (LicenceNb) {
    	  window.open("http://licences.ffessm.fr/licence_liste.asp?action=Ok&numeroadherent=" +
    	     LicenceNb.split("-")[2],
    	     '_blank');
    }
+   // Recherche par Nom et Prénom
    function getFFESSM_Rech (NomAdh, PrenomAdh) {
    	  window.open("https://licences.ffessm.fr/licence_liste.asp?date1=&date2=&membre=&numeroadherent=&nomadherent=" + NomAdh +
    	     "&prenomadherent=" + PrenomAdh + "&datenais=&datevalidite=&assurance=&action=Ok",
    	     '_blank');
    }
+   // Enregistrer une inscription 
    function FFESSM_Insc (LicenceNb, NomAdh, PrenomAdh, DateNaiss) {
    	  if ( LicenceNb.split("-")[0] == 'A' ) {
    	  window.open("https://licences.ffessm.fr/2018licence_creation2_information.asp?licence_numero=" +
@@ -22,6 +25,7 @@
    	     '_blank');
    	  }
    }
+   // Accès à mon espace perso
    function FFESSM_MonEsp (LicenceFFESSM) {
    	  window.open("http://ffessm.fr/espacelicencie/identification.asp?idpseudo={LicenceFFESSM}",
    	     '_blank');
