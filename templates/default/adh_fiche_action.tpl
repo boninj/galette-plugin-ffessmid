@@ -27,7 +27,7 @@
    }
    // Accès à mon espace perso
    function FFESSM_MonEsp (LicenceFFESSM) {
-   	  window.open("http://ffessm.fr/espacelicencie/identification.asp?idpseudo={LicenceFFESSM}",
+   	  window.open("http://ffessm.fr/espacelicencie/identification.asp?idpseudo=" + LicenceFFESSM,
    	     '_blank');
    }
 {/literal}
