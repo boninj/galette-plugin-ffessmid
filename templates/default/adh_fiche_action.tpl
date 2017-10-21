@@ -1,5 +1,9 @@
 <script language="JavaScript" type="text/javascript">
 {literal}
+   // Supprimer les accents
+   function no_accent (DansLaChaine) {
+   	  return DansLaChaine.replace(/[èéêë]/g, "e").replace(/[ç]/g, "c").replace(/[àâä]/g, "a").replace(/[ïî]/g, "i").replace(/[ûùü]/g, "u").replace(/[ôöó]/g, "o");
+   }
    // Recherche par numéro de licence
    function getFFESSMId (LicenceNb) {
    	  window.open("http://licences.ffessm.fr/licence_liste.asp?action=Ok&numeroadherent=" +
@@ -8,8 +12,8 @@
    }
    // Recherche par Nom et Prénom
    function getFFESSM_Rech (NomAdh, PrenomAdh) {
-   	  window.open("https://licences.ffessm.fr/licence_liste.asp?date1=&date2=&membre=&numeroadherent=&nomadherent=" + NomAdh +
-   	     "&prenomadherent=" + PrenomAdh + "&datenais=&datevalidite=&assurance=&action=Ok",
+   	  window.open("https://licences.ffessm.fr/licence_liste.asp?date1=&date2=&membre=&numeroadherent=&nomadherent=" + no_accent(NomAdh) +
+   	     "&prenomadherent=" + no_accent(PrenomAdh) + "&datenais=&datevalidite=&assurance=&action=Ok",
    	     '_blank');
    }
    // Enregistrer une inscription 
@@ -19,7 +23,7 @@
    	     LicenceNb.split("-")[2],
    	     '_blank');
    	  } else {
-   	  window.open("https://licences.ffessm.fr/2018licence_creation2_information.asp?oblnom=" + NomAdh + "&oblprenom=" + PrenomAdh +
+   	  window.open("https://licences.ffessm.fr/2018licence_creation2_information.asp?oblnom=" + no_accent(NomAdh) + "&oblprenom=" + no_accent(PrenomAdh) +
    	     "&journais=" + DateNaiss.split("-")[2] + "&moisnais=" + DateNaiss.split("-")[1] + "&oblanneenais=" + DateNaiss.split("-")[0] + 
    	     "&action2=VALIDER",
    	     '_blank');
