@@ -3,9 +3,12 @@ $this->register(
     'Galette FFESSM Id',         //Name
     'Accès à une fiche FFESSM',  //Short description
     'Jérôme BONIN',              //Author
-    '0.0.4',                     //Version
-    '0.8',                     //Galette version compatibility
-    '2017-10-21',                //Release date
-    null                         //Permissions needed - not yet implemented
+    '0.0.5',                     //Version
+    '0.9',                       //Galette version compatibility
+    'ffessmid',                  //routing name and translation domain
+    '2018-07-30',                //Release date
+    [                            //Permissions needed - not yet implemented
+        'ffessmid_main' => 'staff'
+    ]
 );
 ?>
