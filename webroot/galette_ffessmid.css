@@ -1,0 +1,12 @@
+#btn_plugins_ffessmid_licence{
+    background-image:url({path_for name="plugin_res" data=["plugin" => $module_id, "path" => "images/ffessm-lic.png)"]}, url("../../../../templates/default/jquery-ui/images/ui-bg_glass_75_e6e6e6_1x400.png");
+}
+#btn_plugins_ffessmid_espace{
+    background-image:url({path_for name="plugin_res" data=["plugin" => $module_id, "path" => "images/ffessm-esp.png"]}), url("../../../../templates/default/jquery-ui/images/ui-bg_glass_75_e6e6e6_1x400.png");
+}
+#btn_plugins_ffessmid_inscript{
+    background-image:url({path_for name="plugin_res" data=["plugin" => $module_id, "path" => "images/ffessm-ins.png"]}), url("../../../../templates/default/jquery-ui/images/ui-bg_glass_75_e6e6e6_1x400.png");
+}
+#btn_plugins_ffessmid_desk_espace{
+    background-image:url({path_for name="plugin_res" data=["plugin" => $module_id, "path" => "images/desktop/ffessm-esp.png"]}), url("../../../../templates/default/jquery-ui/images/ui-bg_glass_75_e6e6e6_1x400.png");
+}

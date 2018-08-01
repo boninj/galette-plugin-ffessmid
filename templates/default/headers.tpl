@@ -1,3 +1,3 @@
 
-        <link rel="stylesheet" type="text/css" href="{$galette_base_path}{$ffessmid_tpl_dir}galette_ffessmid.css"/>
+        <link rel="stylesheet" type="text/css" href="{path_for name="plugin_res" data=["plugin" => $module_id, "path" => "galette_ffessmid.css"]}"/>
 
