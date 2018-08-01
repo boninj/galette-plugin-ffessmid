@@ -10,7 +10,7 @@
 </script>
 <a href="javascript:getFFESSMId('{$member->login}')">
    <img
-      src="{$ffessmid_tpl_dir}images/ffessm-icon.png"
+      src="{path_for name="plugin_res" data=["plugin" => $module_id, "path" => "images/ffessm-icon.png"]}"
       alt="Licence FFESSM"
       title="{$member->sname}&nbsp;: Fiche licencié sur FFESSM.fr"
       width="16" height="16"/>
