@@ -6,14 +6,14 @@
     background-repeat: no-repeat, repeat!important;
 }
 #btn_plugins_ffessmid_licence{
-    background-image:url("images/ffessm-lic.png"), url("../../../../templates/default/jquery-ui/images/ui-bg_glass_75_e6e6e6_1x400.png");
+    background-image:url("images/ffessm-lic.png");
 }
 #btn_plugins_ffessmid_espace{
-    background-image:url("images/ffessm-esp.png"), url("../../../../templates/default/jquery-ui/images/ui-bg_glass_75_e6e6e6_1x400.png");
+    background-image:url("images/ffessm-esp.png");
 }
 #btn_plugins_ffessmid_inscript{
-    background-image:url("images/ffessm-ins.png"), url("../../../../templates/default/jquery-ui/images/ui-bg_glass_75_e6e6e6_1x400.png");
+    background-image:url("images/ffessm-ins.png");
 }
 #btn_plugins_ffessmid_desk_espace{
-    background-image:url("images/desktop/ffessm-esp.png"), url("../../../../templates/default/jquery-ui/images/ui-bg_glass_75_e6e6e6_1x400.png");
+    background-image:url("images/desktop/ffessm-esp.png");
 }
