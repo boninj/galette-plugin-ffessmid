@@ -30,20 +30,19 @@
    	  }
    }
    // Enregistrer une inscription 2019
-   function FFESSM_Insc_2019 (LicenceNb, NomAdh, PrenomAdh, DateNaiss) {
-   	  window.alert("Fonction pas encore disponible...");
-/*
+   function FFESSM_Insc_2019 (LicenceNb, NomAdh, PrenomAdh, DateNaiss, Telephone, Email) {
+   	  //window.alert("Fonction pas encore disponible...");
+
    	  if ( LicenceNb.split("-")[0] == 'A' ) {
-   	  window.open("https://licences.ffessm.fr/2019licence_creation2_information.asp?licence_numero=" +
-   	     LicenceNb.split("-")[2],
-   	     '_blank');
+		window.open("https://licences.ffessm.fr/2019licence_creation2_information.asp?licence_numero=" +
+			LicenceNb.split("-")[2] + "&action1=VALIDER",
+			'_blank');
    	  } else {
-   	  window.open("https://licences.ffessm.fr/2019licence_creation2_information.asp?oblnom=" + no_accent(NomAdh) + "&oblprenom=" + no_accent(PrenomAdh) +
-   	     "&journais=" + DateNaiss.split("-")[2] + "&moisnais=" + DateNaiss.split("-")[1] + "&oblanneenais=" + DateNaiss.split("-")[0] + 
-   	     "&action2=VALIDER",
-   	     '_blank');
+		window.open("https://licences.ffessm.fr/2019licence_creation2_information.asp?oblnom=" + no_accent(NomAdh) + "&oblprenom=" + no_accent(PrenomAdh) +
+			"&journais=" + DateNaiss.split("-")[2] + "&moisnais=" + DateNaiss.split("-")[1] + "&oblanneenais=" + DateNaiss.split("-")[0] + 
+			"&action2=VALIDER",
+			'_blank');
    	  }
-*/
    }
    // Accès à mon espace perso
    function FFESSM_MonEsp (LicenceFFESSM) {
@@ -68,10 +67,7 @@
 {/if}
 {if $login->isAdmin() or $login->isStaff()}
 <li>
-   <a class="button" href="javascript:FFESSM_Insc_2018('{$member->login}','{$member->_name}','{$member->_surname}','{$member->_birthdate}')" id="btn_plugins_ffessmid_inscript" title="Inscrire cet adhérent via le site de la FFESSM (2018).">Inscription 2018<!-- {_T string="Inscription FFESSM 2018"} --></a>
-</li>
-<li>
-   <a class="button" href="javascript:FFESSM_Insc_2019('{$member->login}','{$member->_name}','{$member->_surname}','{$member->_birthdate}')" id="btn_plugins_ffessmid_inscript" title="Inscrire cet adhérent via le site de la FFESSM (2018).">Inscription 2019<!-- {_T string="Inscription FFESSM 2019"} --></a>
+   <a class="button" href="javascript:FFESSM_Insc_2019('{$member->login}','{$member->_name}','{$member->_surname}','{$member->_birthdate}','{$member->_phone}','{$member->_email}')" id="btn_plugins_ffessmid_inscript" title="Inscrire cet adhérent via le site de la FFESSM (2018).">Inscription 2019<!-- {_T string="Inscription FFESSM 2019"} --></a>
 </li>
 
 {/if}
