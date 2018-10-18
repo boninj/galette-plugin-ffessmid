@@ -6,8 +6,8 @@
    }
    // Recherche par numéro de licence
    function getFFESSMId (LicenceNb) {
-   	  window.open("http://licences.ffessm.fr/licence_liste.asp?action=Ok&numeroadherent=" +
-   	     LicenceNb.split("-")[2],
+   	  window.open("https://licences.ffessm.fr/licence_fiche.asp?id=" +
+   	     ( parseInt(LicenceNb.split("-")[2]) + 9 ),
    	     '_blank');
    }
    // Recherche par Nom et Prénom
